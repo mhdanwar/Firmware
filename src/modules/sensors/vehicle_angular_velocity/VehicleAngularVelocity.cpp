@@ -224,7 +224,7 @@ VehicleAngularVelocity::Run()
 		sensor_gyro_control_s sensor_data;
 
 		if (_sensor_control_sub[_selected_sensor].update(&sensor_data)) {
-			perf_set_elapsed(_sensor_latency_perf, hrt_elapsed_time(&sensor_data.timestamp));
+			perf_set_elapsed(_sensor_latency_perf, hrt_elapsed_time(&sensor_data.timestamp_sample));
 
 			ParametersUpdate();
 			SensorBiasUpdate();

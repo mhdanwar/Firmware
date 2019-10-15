@@ -60,13 +60,13 @@ MPU6000::MPU6000(device::Device *interface, const char *path, enum Rotation rota
 		break;
 
 	case MPU_DEVICE_TYPE_ICM20602:
-		_px4_accel.set_device_type(DRV_ACC_DEVTYPE_ICM20602);
-		_px4_gyro.set_device_type(DRV_GYR_DEVTYPE_ICM20602);
+		_px4_accel.set_device_type(DRV_DEVTYPE_ICM20602);
+		_px4_gyro.set_device_type(DRV_DEVTYPE_ICM20602);
 		break;
 
 	case MPU_DEVICE_TYPE_ICM20608:
-		_px4_accel.set_device_type(DRV_ACC_DEVTYPE_ICM20608);
-		_px4_gyro.set_device_type(DRV_GYR_DEVTYPE_ICM20608);
+		_px4_accel.set_device_type(DRV_DEVTYPE_ICM20608G);
+		_px4_gyro.set_device_type(DRV_DEVTYPE_ICM20608G);
 		break;
 
 	case MPU_DEVICE_TYPE_ICM20689:

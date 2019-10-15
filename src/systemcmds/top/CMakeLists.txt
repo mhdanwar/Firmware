@@ -33,7 +33,7 @@
 px4_add_module(
 	MODULE systemcmds__top
 	MAIN top
-	PRIORITY "SCHED_PRIORITY_MAX"
+	PRIORITY "SCHED_PRIORITY_DEFAULT"
 	COMPILE_FLAGS
 	SRCS
 		top.c
